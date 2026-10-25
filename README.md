@@ -91,7 +91,7 @@ RIPPLE is a simulation project intended for learning and entertainment. Its simu
 
 ## Contributors
 
-Developed by **Team Syntax-Error**.
+Developed by **Team Syntax-Error**. <br>
 **TEAM MEMBERS : VIHAAN JAIN, NEEL SAWARN, ANSHIKA AGRAHARI, ADITYA KUMAR**
 
 ---
