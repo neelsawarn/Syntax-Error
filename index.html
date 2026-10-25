@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <title>RIPPLE — Life &amp; Markets</title>
+
+    <!-- Three.js library for the 3D environment -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- 3D Game Environment -->
+    <div id="gl"></div>
+
+    <!-- Top Status Bar -->
+    <header id="top" class="glass">
+
+        <div class="logo">
+            RIPPLE
+            <small>Life &amp; Markets</small>
+        </div>
+
+        <!-- Player Financial Information -->
+        <div class="pill">
+            💲
+            <div>
+                <small>Cash</small>
+                <b id="hCash"></b>
+            </div>
+        </div>
+
+        <div class="pill">
+            📈
+            <div>
+                <small>Investments</small>
+                <b id="hInv"></b>
+            </div>
+        </div>
+
+        <div class="pill">
+            💼
+            <div>
+                <small>Job</small>
+                <b id="hJob"></b>
+            </div>
+        </div>
+
+        <!-- Player Age and In-Game Year -->
+        <div class="pill">
+            📅
+            <div>
+                <small id="hYr"></small>
+                <b id="hAge"></b>
+            </div>
+        </div>
+
+        <!-- Player Vital Statistics -->
+        <div class="vit">
+
+            <div>
+                ❤️ Health
+                <i>
+                    <u id="vH" style="background: #10b981;"></u>
+                </i>
+            </div>
+
+            <div>
+                ⚡ Energy
+                <i>
+                    <u id="vE" style="background: #38bdf8;"></u>
+                </i>
+            </div>
+
+            <div>
+                😊 Happiness
+                <i>
+                    <u id="vP" style="background: #f59e0b;"></u>
+                </i>
+            </div>
+
+        </div>
+
+        <button class="ib" id="gear" aria-label="Settings">
+            ⚙
+        </button>
+
+    </header>
+
+    <!-- Desktop Sidebar Navigation -->
+    <nav id="side" class="glass">
+
+        <button data-p="market" data-i="📊">
+            📊 Stock Market
+        </button>
+
+        <button data-p="portfolio" data-i="👛">
+            👛 Portfolio
+        </button>
+
+        <button data-p="journal" data-i="📖">
+            📖 Journal
+        </button>
+
+        <button data-p="messages" data-i="💬">
+            💬 Messages
+            <b id="badge"></b>
+        </button>
+
+        <button data-p="settings" data-i="⚙">
+            ⚙️ Settings
+        </button>
+
+    </nav>
+
+    <!-- Mini-Map -->
+    <div id="mm">
+        <canvas id="mmc" width="340" height="340"></canvas>
+        <b>N</b>
+    </div>
+
+    <!-- Quick Action Dock -->
+    <div id="dock" class="glass">
+
+        <button data-p="market">
+            📊
+            <span>Stock Market</span>
+        </button>
+
+        <button data-p="portfolio">
+            👛
+            <span>Portfolio</span>
+        </button>
+
+        <button data-a="work">
+            💼
+            <span>Work</span>
+        </button>
+
+        <button data-a="rest">
+            🛏️
+            <span>Rest</span>
+        </button>
+
+        <button data-a="travel">
+            ✈️
+            <span>Travel</span>
+        </button>
+
+    </div>
+
+    <!-- Game Controls -->
+    <div id="gw">
+        <button id="go"></button>
+
+        <button id="skip" class="glass">
+            ⏭ Skip month
+        </button>
+    </div>
+
+    <!-- Notifications and Gameplay Hints -->
+    <div id="ban"></div>
+    <div id="tip"></div>
+    <div id="toast"></div>
+
+    <!-- Main Information Panel -->
+    <main id="pnl" class="glass"></main>
+
+    <!-- Introduction Screen -->
+    <div id="intro"></div>
+
+    <!-- Dialog Box -->
+    <div id="dlg">
+        <div id="dc" class="glass"></div>
+    </div>
+
+    <!-- Cutscene Container -->
+    <div id="cut"></div>
+
+    <!-- Sleeping Animation -->
+    <div id="zz">
+        <b>Z</b>
+        <b>z</b>
+        <b>z</b>
+        <span>Sleeping…</span>
+    </div>
+
+    <!-- Main Game Logic -->
+    <script src="script.js"></script>
+
+</body>
+</html>
